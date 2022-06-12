@@ -7670,19 +7670,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\icharlin\\.nuget\\packages\\": {}
+    "C:\\Users\\004916613\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\icharlin\\OneDrive - Banco de Galicia Y Buenos Aires S.A\\Desktop\\TP-Investigacion\\MVCCore.MongoDB\\MVCCore.MongoDB\\MVCCore.MongoDB.csproj",
+      "projectUniqueName": "C:\\Users\\004916613\\Desktop\\uni\\tp-investigacion\\MVCCore.MongoDB\\MVCCore.MongoDB.csproj",
       "projectName": "MVCCore.MongoDB",
-      "projectPath": "C:\\Users\\icharlin\\OneDrive - Banco de Galicia Y Buenos Aires S.A\\Desktop\\TP-Investigacion\\MVCCore.MongoDB\\MVCCore.MongoDB\\MVCCore.MongoDB.csproj",
-      "packagesPath": "C:\\Users\\icharlin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\icharlin\\OneDrive - Banco de Galicia Y Buenos Aires S.A\\Desktop\\TP-Investigacion\\MVCCore.MongoDB\\MVCCore.MongoDB\\obj\\",
+      "projectPath": "C:\\Users\\004916613\\Desktop\\uni\\tp-investigacion\\MVCCore.MongoDB\\MVCCore.MongoDB.csproj",
+      "packagesPath": "C:\\Users\\004916613\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\004916613\\Desktop\\uni\\tp-investigacion\\MVCCore.MongoDB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\icharlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\004916613\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7741,6 +7741,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.17, 5.0.17]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7749,7 +7755,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
