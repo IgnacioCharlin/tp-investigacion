@@ -7675,11 +7675,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\icharlin\\OneDrive - Banco de Galicia Y Buenos Aires S.A\\Desktop\\tpInvestigacion\\tp-investigacion\\MVCCore.MongoDB\\MVCCore.MongoDB.csproj",
+      "projectUniqueName": "C:\\Users\\icharlin\\OneDrive - Banco de Galicia Y Buenos Aires S.A\\Desktop\\tp\\tp-investigacion\\MVCCore.MongoDB\\MVCCore.MongoDB.csproj",
       "projectName": "MVCCore.MongoDB",
-      "projectPath": "C:\\Users\\icharlin\\OneDrive - Banco de Galicia Y Buenos Aires S.A\\Desktop\\tpInvestigacion\\tp-investigacion\\MVCCore.MongoDB\\MVCCore.MongoDB.csproj",
+      "projectPath": "C:\\Users\\icharlin\\OneDrive - Banco de Galicia Y Buenos Aires S.A\\Desktop\\tp\\tp-investigacion\\MVCCore.MongoDB\\MVCCore.MongoDB.csproj",
       "packagesPath": "C:\\Users\\icharlin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\icharlin\\OneDrive - Banco de Galicia Y Buenos Aires S.A\\Desktop\\tpInvestigacion\\tp-investigacion\\MVCCore.MongoDB\\obj\\",
+      "outputPath": "C:\\Users\\icharlin\\OneDrive - Banco de Galicia Y Buenos Aires S.A\\Desktop\\tp\\tp-investigacion\\MVCCore.MongoDB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\icharlin\\AppData\\Roaming\\NuGet\\NuGet.Config",

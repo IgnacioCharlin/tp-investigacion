@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4pVnNjKAoQMwfGInsWFD3ytmG8eiCGCyE2T9WDQOklJIxemFQvItDHh0hLhh2AHzG0NNi2L/2J8hJY6aO7+SqA==",
+  "dgSpecHash": "1wOcqHWj7dgkgvRzC3C1mP2ypIy5HNDZnGWiHO32Y/XYJUkUGwwtm7hP/y2TS++5lts3dWMIQb96Be6ZYYAtzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\icharlin\\OneDrive - Banco de Galicia Y Buenos Aires S.A\\Desktop\\tpInvestigacion\\tp-investigacion\\MVCCore.MongoDB\\MVCCore.MongoDB.csproj",
+  "projectFilePath": "C:\\Users\\icharlin\\OneDrive - Banco de Galicia Y Buenos Aires S.A\\Desktop\\tp\\tp-investigacion\\MVCCore.MongoDB\\MVCCore.MongoDB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\icharlin\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
     "C:\\Users\\icharlin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

@@ -35,7 +35,7 @@ namespace MVCCore.MongoDB.Controllers
         {
             try
             {
-                var album =  db.getAlmbumById(id);
+                var album =  db.GetAlmbumById(id);
                 return View(album);
             }
             catch
@@ -88,7 +88,7 @@ namespace MVCCore.MongoDB.Controllers
                 return NotFound();
             }
 
-            var album = db.getAlmbumById(id);
+            var album = db.GetAlmbumById(id);
             if (album == null)
             {
                 return NotFound();
@@ -114,7 +114,7 @@ namespace MVCCore.MongoDB.Controllers
                     ReleaseDate = DateTime.Parse(collection["ReleaseDate"])
                 };
 
-                db.updateAlbum(album);
+                db.UpdateAlbum(album);
                 return RedirectToAction(nameof(Index));
             }
             catch (InvalidCastException e)
@@ -126,7 +126,7 @@ namespace MVCCore.MongoDB.Controllers
         // GET: Albums/Delete/5
         public async Task<IActionResult> Delete(string? id)
         {
-            Album album = db.getAlmbumById(id);
+            Album album = db.GetAlmbumById(id);
             return View(album);
         }
 

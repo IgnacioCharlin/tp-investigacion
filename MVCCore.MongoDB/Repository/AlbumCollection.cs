@@ -20,30 +20,29 @@ namespace MVCCore.MongoDB.Repository
         public void DeleteAlbum(string id)
         {
             var filter = Builders<Album>.Filter.Eq(s => s.Id, id);
-            Collection.DeleteOneAsync(filter);
+            Collection.DeleteOne(filter);
         }
 
         public List<Album> GetAllAlbums()
         {
-            var query = Collection.Find(new BsonDocument()).ToListAsync();
-            return query.Result;
+            return Collection.Find(new BsonDocument()).ToList();
         }
 
-        public Album getAlmbumById(string id)
+        public Album GetAlmbumById(string id)
         {
-            var album = Collection.Find(new BsonDocument { { "_id", new ObjectId(id) } }).FirstAsync().Result;
+            var album = Collection.Find(new BsonDocument { { "_id", new ObjectId(id) } }).First();
             return album;
         }
 
         public void InsertAlbum(Album album)
         {
-            Collection.InsertOneAsync(album);
+            Collection.InsertOne(album);
         }
 
-        public void updateAlbum(Album album)
+        public void UpdateAlbum(Album album)
         {
             var filter = Builders<Album>.Filter.Eq(s=> s.Id,album.Id);
-            Collection.ReplaceOneAsync(filter, album);
+            Collection.ReplaceOne(filter, album);
         }
     }
 }
