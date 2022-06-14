@@ -6,6 +6,7 @@ namespace MVCCore.MongoDB.Models
 {
     public class Album
     {
+        //Bson es el formato que representa documento Mongo
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
