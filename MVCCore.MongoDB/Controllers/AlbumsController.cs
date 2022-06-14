@@ -35,8 +35,8 @@ namespace MVCCore.MongoDB.Controllers
         {
             try
             {
-                var almbum =  db.getAlmbumById(id);
-                return View(almbum);
+                var album =  db.getAlmbumById(id);
+                return View(album);
             }
             catch
             {
@@ -55,7 +55,7 @@ namespace MVCCore.MongoDB.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(IFormCollection collection)
+        public ActionResult Create(IFormCollection collection)
         {
             try
             {
@@ -68,9 +68,9 @@ namespace MVCCore.MongoDB.Controllers
                 };
 
                 db.InsertAlbum(album);
-                return redirectToAction(nameof(Index));
-            }catch 
-            {
+                return RedirectToAction(nameof(Index));
+            }
+            catch {
                 return View();
             }  
         }
@@ -101,7 +101,7 @@ namespace MVCCore.MongoDB.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, IFormCollection collection)
+        public ActionResult Edit(string id, IFormCollection collection)
         {
             try
             {
@@ -115,9 +115,9 @@ namespace MVCCore.MongoDB.Controllers
                 };
 
                 db.updateAlbum(album);
-                return redirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (InvalidCastException e)
             {
                 return View();
             }
@@ -133,12 +133,12 @@ namespace MVCCore.MongoDB.Controllers
         // POST: Albums/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(string id)
         {
             try
             {
                 db.DeleteAlbum(id);
-                return redirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index));
             }
             catch
             {

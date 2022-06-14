@@ -4,27 +4,19 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 class="display-3 text-center">Listado de Albumes</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+
+<a class="btn btn-success mb-3" asp-action="Create"><i class="fa-solid fa-plus"></i></a>
+
+<table class="table table-hover">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.AlbumName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Artist)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ReleaseDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Duration)
-            </th>
-            <th></th>
+            <th>Album</th>
+            <th>Nombre del Artista</th>
+            <th>Fecha de Creacion</th>
+            <th>Duracion</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -43,9 +35,9 @@
                 @Html.DisplayFor(modelItem => item.Duration)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" class="btn btn-warning w-25" asp-route-id="@item.Id"><i class="fa-solid fa-pen-to-square text-light"></i></a>
+                <a asp-action="Details" class="btn btn-primary w-25" asp-route-id="@item.Id"><i class="fa-solid fa-info"></i></a>
+                <a asp-action="Delete" class="btn btn-danger w-25" asp-route-id="@item.Id"><i class="fa-solid fa-trash-can"></i></a>
             </td>
         </tr>
 }
